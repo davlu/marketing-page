@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/ujn6tjo.css");
+@import url(https://db.onlinewebfonts.com/c/247337a1c1af6633c9ed10e68a850825?family=RomainBPTextRegular);
+:root {
+  --primary-color: #121426;
+  --light-primary: #26284e;
+  --secondary-color: #eedfd2;
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --gray-100: #f8f6f4;
+  --gray-400: #888888;
+  --color-white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+.n ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "europa", sans-serif; /* Use the 'europa' font with a fallback to sans-serif */
+  font-style: normal;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  font-weight: 300;
+}

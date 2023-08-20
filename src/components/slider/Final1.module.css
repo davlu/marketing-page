@@ -1,0 +1,164 @@
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  .slide {
+    position: absolute;
+    width: 100vw;
+    &:last-of-type {
+      animation: slideIn 0.5s ease-in-out;
+    }
+    &:first-of-type {
+      animation: slideOut 0.5s ease-in-out;
+    }
+    .textContainer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      width: fit-content;
+      white-space: pre-wrap;
+      max-width: 70%;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      .title {
+        font: 700 4rem/1.5 "Montserrat";
+        margin: 0 auto 30px;
+      }
+      .body {
+        font: 400 3rem/1.5 "Montserrat";
+        margin: 0 auto 30px;
+      }
+    }
+  }
+  .noAnimate {
+    animation: none !important;
+  }
+  .indicators {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    z-index: 9000;
+    .indicator {
+      background-color: white;
+      opacity: 0.5;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin: 0 0.2rem;
+      transition: 0.3s;
+    }
+    .active {
+      background-color: white;
+      opacity: 1;
+    }
+  }
+}
+
+/* slider image styles */
+
+.slider__img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .slider__img {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider__img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font: 700 3rem/1.5 "Montserrat";
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    font: 400 2rem/1.5 "Montserrat";
+    margin: 0 auto 20px;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
+  .slider__button {
+    padding: 5px 30px;
+  }
+} */
+
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font: 400 3.5rem/1.5 "Montserrat";
+  color: #fff;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  right: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .buttonRight {
+    font: 400 2.5rem/1.5 "Montserrat";
+  }
+}
+
+.rightSlider {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 50%;
+  right: 5%;
+  .rightButton {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+    display: flex;
+    background-color: #f8f6f4;
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+}
