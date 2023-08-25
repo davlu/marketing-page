@@ -1,0 +1,114 @@
+.footerContainer {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .footerSubscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 24px;
+    color: #fff;
+    & > p {
+      /* font-family:  */
+    }
+    .heading {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+
+    .text {
+      margin-bottom: 24px;
+      font-size: 20px;
+    }
+    .input {
+      padding: 8px 20px;
+      border-radius: 2px;
+      margin-right: 10px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      margin-bottom: 16px;
+      border: 1px solid #fff;
+      &::placeholder {
+        color: var(--gray-400);
+      }
+    }
+    button {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid var(--color-white);
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.2s;
+      &:hover {
+        background-color: var(--light-primary);
+        border-color: var(--light-primary);
+        border: 1px solid var(--color-white);
+      }
+    }
+  }
+
+  .footerLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .linkWrapper {
+      display: flex;
+      .linkItems {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 16px;
+        text-align: left;
+        width: 160px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    a {
+      margin-bottom: 8px;
+      &:hover {
+        color: #e9e9e9;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+}
+
+.socialMedia {
+  width: 100%;
+  .socialMediaWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    .footerLogo {
+      flex: 1;
+    }
+    .websiteRights {
+      flex: 1;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      .socialIconLink {
+        color: var(--color-white);
+        font-size: 24px;
+      }
+    }
+  }
+}

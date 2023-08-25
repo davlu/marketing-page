@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid #f0f0f0;
+  .mainImg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .cardBody {
+    padding: 36px;
+    flex-grow: 1;
+    text-align: center;
+    h4 {
+      margin: 0 auto 12px auto;
+      font-weight: 300;
+      line-height: 32px;
+      font-size: 28px;
+    }
+    p {
+      margin-bottom: 24px;
+      font-family: europa, sans-serif;
+      font-weight: 300;
+    }
+    .learnMoreButton {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
